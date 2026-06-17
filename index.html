@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -35,6 +34,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
+            margin-bottom: 20px;
         }
         th, td {
             padding: 10px;
@@ -43,6 +43,22 @@
         }
         th {
             background-color: #f2f2f2;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-top: 15px;
+            border: 1px solid #ddd;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         footer {
             text-align: center;
@@ -87,6 +103,22 @@
 
         <h2>Presidência da República (2019-2022)</h2>
         <p>Eleito em outubro de 2018, Bolsonaro assumiu a presidência do Brasil em 1º de janeiro de 2019. Seu governo foi marcado por uma agenda econômica de viés liberal, reformas estruturais e posicionamentos alinhados ao conservadorismo político e social.</p>
+
+        <h2>Registro em Vídeo</h2>
+        <p>Assista abaixo ao vídeo incorporado:</p>
+        
+        <div class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/7_ySHTGK5DQ?si=CfoWR0feTfuw6uFn" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </main>
 
     <footer>
